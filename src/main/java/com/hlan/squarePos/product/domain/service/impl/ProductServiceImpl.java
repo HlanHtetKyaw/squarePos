@@ -23,7 +23,11 @@ public class ProductServiceImpl implements ProductService {
         String productName = productRepository.findById(product.getId())
                 .map(Product::getProductName)
                 .orElseThrow(() -> new RuntimeException("Product not found"));
-
         System.out.println(productName);
     }
+
+	@Override
+	public void saveTheProduct() {
+		
+	}
 }
