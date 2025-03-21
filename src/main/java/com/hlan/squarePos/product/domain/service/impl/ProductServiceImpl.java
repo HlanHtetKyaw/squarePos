@@ -19,13 +19,13 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public void gettingData() {
-//        product.setProductName("Apple");
-//        product.setCost(1000);
-//        product.setSale(1500);
-//        product.setExpire_date(LocalDate.now());
-//        product.setQuantity(5);
+        product.setProductName("Apple");
+        product.setCost(1000);
+        product.setSale(1500);
+        product.setExpire_date(LocalDate.now());
+        product.setQuantity(5);
 //        product.setId(1);
-//        productRepository.save(product);
+        productRepository.save(product);
 
         String productName = productRepository.findById((long) 1)
                 .map(Product::getProductName)

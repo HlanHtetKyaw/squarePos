@@ -6,7 +6,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Component;
 
-import com.hlan.squarePos.product.domain.model.Product;
+import com.hlan.squarePos.orderItem.domain.model.OrderItem;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -28,21 +28,20 @@ import lombok.NoArgsConstructor;
 public class Voucher {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	long id;
+	private long id;
 	
 	@Column(nullable = false,updatable = false)
-	LocalDate date;
+	private LocalDate date;
 	
 	@Column(nullable = false,updatable = false)
 	LocalTime hour;
 	
-	int total_cost;
-	int total_sale;
-	int profit;
+	private int total_cost;
+	private int total_sale;
+	private int profit;
 	
-	@OneToMany
-	@JoinColumn(name = "product_id")
-	List<Product> product;
+	@OneToMany(mappedBy = "voucher")
+	private List<OrderItem> orderItem;
 	
 	@PrePersist
 	protected void onCreate() {
