@@ -9,5 +9,11 @@ class SquarePosApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
+	
+	@Test
+    public void exampleTest() {
+        // Your test logic here
+        System.out.println("Test method executed.");
+    }
+	
 }
