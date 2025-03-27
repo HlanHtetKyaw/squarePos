@@ -50,21 +50,10 @@ LMS တွင် ပါဝင်သော Table များ
 
 Description
 
-ကိုလင်းရဲ့ ဦးဆောင်မှုဖြင့် Learning Management System လေးကို တစ်လအတွင်း ရေးကြမယ်ဆိုပြီး စီစဥ်ခဲ့ကြပါတယ်။ ဒီ System လေးရဲ့ အဓိက ရည်ရွယ်ချက်တော့ သင်ကြားသူတွေရော ဆရာတွေပါ အစဥ်ပြေစေမဲ့ learning platform တစ်ခု တည်ဆောင်ခြင်း ပဲဖြစ်ပါတယ်။ သင်ကြားသူတွေအနေနဲ့ course တွေကို အလွယ် တကူ category အလိုက်ရှာလို့ရမှာဖြစ်တဲ့အတွက် ကိုယ်လိုချင်တဲ့ course ကို enroll မြန်မြန် ဆန်ဆန် လုပ်လို့ရပါတယ်။ Instructor တွေကလဲ ကိုယ်သင်ချင်တဲ့ course တွေကို platform ပေါ်တင်ပြီး management လုပ်လို့ရပါတယ်။
-
-### Doctor
-> ဆရာဝန်ရဲ့ အချက်အလက်များ သိမ်းရန်၊ Patient နဲ့ Appointment ချိတ်ဆက်ပေးရန်
-
- Id Int
- DoctorName    String
- Email         String
- MobileNumber  String
- SpecialistId  Int            
- StartDuty     String
- EndDuty       String
+ကိုလင်းရဲ့ ဦးဆောင်မှုဖြင့် Learning Management System လေးကို တစ်လအတွင်း ရေးကြမယ်ဆိုပြီး စီစဥ်ခဲ့ကြပါတယ်။ ဒီ System လေးရဲ့ အဓိက ရည်ရွယ်ချက်တော့ သင်ကြားသူတွေရော ဆရာတွေပါ အဆင်ပြေစေမဲ့ learning platform တစ်ခု တည်ဆောင်ခြင်း ပဲဖြစ်ပါတယ်။ သင်ကြားသူတွေအနေနဲ့ course တွေကို အလွယ် တကူ category အလိုက်ရှာလို့ရမှာဖြစ်တဲ့အတွက် ကိုယ်လိုချင်တဲ့ course ကို enroll မြန်မြန် ဆန်ဆန် လုပ်လို့ရပါတယ်။ Instructor တွေကလဲ ကိုယ်သင်ချင်တဲ့ course တွေကို platform ပေါ်တင်ပြီး management လုပ်လို့ရပါတယ်။
 
 ### User
-> လူနာတွေရဲ့ အချက်အလက်များသိမ်းရန်၊ Doctor နဲ့ Appointment ချိတ်ဆက်ပေးရန်
+> User အချက်အလက်များသိမ်းရန်၊ Instructor, Student, Admin တို့ဖြင့် ချိတ်ဆတ်ရန်
 
   user_Id       Int    
   username      String   
