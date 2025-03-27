@@ -53,8 +53,9 @@ Description
 ကိုလင်းရဲ့ ဦးဆောင်မှုဖြင့် Learning Management System လေးကို တစ်လအတွင်း ရေးကြမယ်ဆိုပြီး စီစဥ်ခဲ့ကြပါတယ်။ ဒီ System လေးရဲ့ အဓိက ရည်ရွယ်ချက်တော့ သင်ကြားသူတွေရော ဆရာတွေပါ အဆင်ပြေစေမဲ့ learning platform တစ်ခု တည်ဆောင်ခြင်း ပဲဖြစ်ပါတယ်။ သင်ကြားသူတွေအနေနဲ့ course တွေကို အလွယ် တကူ category အလိုက်ရှာလို့ရမှာဖြစ်တဲ့အတွက် ကိုယ်လိုချင်တဲ့ course ကို enroll မြန်မြန် ဆန်ဆန် လုပ်လို့ရပါတယ်။ Instructor တွေကလဲ ကိုယ်သင်ချင်တဲ့ course တွေကို platform ပေါ်တင်ပြီး management လုပ်လို့ရပါတယ်။
 
 ### User
-> User အချက်အလက်များသိမ်းရန်၊ Instructor, Student, Admin တို့ဖြင့် ချိတ်ဆတ်ရန်
+> User အချက်အလက်များသိမ်းရန်၊ Instructor, Student, Admin တို့ဖြင့် ချိတ်ဆက်ရန်
 
+```
   user_Id       Int    
   username      String   
   email         String 
@@ -67,3 +68,4 @@ Description
   is_available  Boolean
   created_at    DateTime
   updated_at    DateTime
+```
