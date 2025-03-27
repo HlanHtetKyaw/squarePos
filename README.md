@@ -9,7 +9,7 @@
 Tech Stack
 - [API](https://lms-java-production.up.railway.app/) - Spring Boot, Java, MySQL
 
-ဒီ project ရဲ့ Reposirtory လေးကိုတော့ ဒီ [Link] (https://github.com/one-project-one-month/lms-java.git)ကနေ ကြည့်လိုရပါတယ်
+ဒီ project ရဲ့ Reposirtory လေးကိုတော့ ဒီ [Link](https://github.com/one-project-one-month/lms-java.git) ကနေ ကြည့်လိုရပါတယ်
 
 ---------------------------------
 
