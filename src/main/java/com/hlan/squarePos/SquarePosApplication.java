@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.stereotype.Component;
 
-import com.hlan.squarePos.product.domain.service.ProductService;
+import com.hlan.squarePos.backend.product.domain.service.ProductService;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -38,6 +38,7 @@ public class SquarePosApplication extends Application {
         Pane root = new Pane();
         Scene scene = new Scene(root);
         root.setBackground(Background.fill(Color.WHITE));
+        primaryStage.setFullScreen(true);
         primaryStage.setScene(scene);
         primaryStage.show();
         productService.gettingData();
