@@ -40,9 +40,9 @@ public class SquarePosApplication extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		this.primaryStage = primaryStage;
-		showMainApp();
-//		showLoadingScreen();
-//		startSpringAndJavaFX();
+//		showMainApp();
+		showLoadingScreen();
+		startSpringAndJavaFX();
 	}
 
 	private void showLoadingScreen() {

@@ -28,80 +28,10 @@ public class MainScreen {
 		managingComponents();
 		root.setBackground(Background.fill(Color.WHITE));
 	}
-//	public static class Product {
-//	    private String productName;
-//	    private double originalPrice;
-//	    private double sellPrice;
-//	    private String extraColumn;
-//
-//	    public Product(String productName, double originalPrice, double sellPrice, String extraColumn) {
-//	        this.productName = productName;
-//	        this.originalPrice = originalPrice;
-//	        this.sellPrice = sellPrice;
-//	        this.extraColumn = extraColumn;
-//	    }
-//
-//	    public String getProductName() {
-//	        return productName;
-//	    }
-//
-//	    public double getOriginalPrice() {
-//	        return originalPrice;
-//	    }
-//
-//	    public double getSellPrice() {
-//	        return sellPrice;
-//	    }
-//
-//	    public String getExtraColumn() {
-//	        return extraColumn;
-//	    }
-//	}
+
 	private void managingComponents() {
 		// Create the root StackPane
         StackPane root = new StackPane();
-
-        // Create the HBox for the buttons at the bottom
-        HBox buttonBox = new HBox(10); // 10 is the spacing between buttons
-        buttonBox.setAlignment(Pos.BASELINE_CENTER); // Align buttons to bottom center
-        buttonBox.setMaxHeight(50); // Set a minimum height for the HBox
-
-        // Create the four buttons
-        Button button1 = new Button("Button 1");
-        Button button2 = new Button("Button 2");
-        Button button3 = new Button("Button 3");
-        Button button4 = new Button("Button 4");
-        
-     // Set a larger font for all buttons
-        Font buttonFont = Font.font("Arial", 18); // You can change "Arial" and 18
-        button1.setFont(buttonFont);
-        button2.setFont(buttonFont);
-        button3.setFont(buttonFont);
-        button4.setFont(buttonFont);
-        
-        // Add the buttons to the HBox
-        buttonBox.getChildren().addAll(button1, button2, button3, button4);
-        buttonBox.setStyle("-fx-background-color: blue;");
-     // Create the TableView
-        TableView<Product> table = new TableView<>();
-        table.setPrefWidth(Double.MAX_VALUE); // Make table width flexible
-        table.setPrefHeight(Double.MAX_VALUE);
-
-        // Create the columns
-        TableColumn<Product, String> productNameCol = new TableColumn<>("Product Name");
-        productNameCol.setCellValueFactory(new PropertyValueFactory<>("productName"));
-
-        TableColumn<Product, Double> originalPriceCol = new TableColumn<>("Original Price");
-        originalPriceCol.setCellValueFactory(new PropertyValueFactory<>("originalPrice"));
-
-        TableColumn<Product, Double> sellPriceCol = new TableColumn<>("Sell Price");
-        sellPriceCol.setCellValueFactory(new PropertyValueFactory<>("sellPrice"));
-
-        TableColumn<Product, String> extraColumnCol = new TableColumn<>("Extra Column");
-        extraColumnCol.setCellValueFactory(new PropertyValueFactory<>("extraColumn"));
-
-        // Add the columns to the table
-        table.getColumns().addAll(productNameCol, originalPriceCol, sellPriceCol, extraColumnCol);
 
         // Create some sample data
         ObservableList<Product> data = FXCollections.observableArrayList(
@@ -118,38 +48,12 @@ public class MainScreen {
 //                new Product("Product 11", 89.99, 94.99, "Extra Data 11"),
 //                new Product("Product 12", 99.99, 104.99, "Extra Data 12")
         );
-        table.setItems(data);
 
-        // Wrap the table in a ScrollPane
-        ScrollPane scrollPane = new ScrollPane(table);
-        scrollPane.setFitToWidth(true); // Make the scrollpane fit the width
-        scrollPane.setPrefWidth(Double.MAX_VALUE);
-        scrollPane.setPrefHeight(Double.MAX_VALUE);
-
-        // Create the Pane for the tables (to be added later)
-        //Pane tablePane = new Pane();
-        //tablePane.setStyle("-fx-background-color: lightgray;"); // Just for visualization
-
-        // Add the HBox and tablePane to the StackPane
-        root.getChildren().addAll(scrollPane, buttonBox);
-
-        // Set layout constraints to position the HBox at the bottom
-        StackPane.setAlignment(buttonBox, Pos.BOTTOM_CENTER);
+        root.getChildren().addAll();
 
         // Create the Scene
         scene = new Scene(root, 600, 400); // Initial size
-
-        // Bind the HBox width to the scene width.  Make sure the buttons
-        // resize properly when the scene is resized.
-        buttonBox.prefWidthProperty().bind(scene.widthProperty());
-        buttonBox.setMaxWidth(Double.MAX_VALUE); // Ensure HBox can expand to maxWidth
-
-        // Position the tablePane at the top.
-        StackPane.setAlignment(scrollPane, Pos.TOP_CENTER); // Use scrollPane here too
-        // Bind scrollPane size to scene size, with a small top margin.
-        scrollPane.prefWidthProperty().bind(scene.widthProperty());
-        scrollPane.prefHeightProperty().bind(scene.heightProperty().subtract(buttonBox.getMinHeight()));
-
+        
 //		addButton = new Button("ADD");
 //		buttonsBox = new HBox();
 //		buttonsBox.getChildren().add(addButton);
